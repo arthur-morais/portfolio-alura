@@ -5,10 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <header>
+    <header class="cabecalho">
+        <nav class="cabecalho-menu">
+            <a class="cabecalho-menu-link" href="./index.html">Home</a>
+            <a class="cabecalho-menu-link" href="./about.html">Sobre mim</a>
+        </nav>
     </header>
     
     <main class="apresentacao">
@@ -16,14 +20,25 @@
             <h1 class="apresentacao-conteudo-titulo">Eleve seu negócio digital a outro nível <strong class="titulo-destaque">com um Front-end de qualidade!</strong></h1>
             <p class="apresentacao-conteudo-texto">Olá! Sou Joana Santos, desenvolvedora Front-end com especialidade em <strong class=""> React, HTML e CSS.</strong> Ajudo pequenos negócios e designers a colocarem em prática boas ideias. Vamos conversar?</p>
             <div class="apresentacao-links">
-                <a class="apresentacao-links-link" href="https://github.com/arthur-morais/" target="_blank">GitHub</a>
-                <a class="apresentacao-links-link" href="https://www.linkedin.com/in/arthur-morais-b24663250/" target="_blank">LinkedIn</a>
+                <h2 class="apresentacao-links-subtitulo">Acesse minhas redes:</h2>
+                <a class="apresentacao-links-link" href="https://github.com/arthur-morais/" target="_blank">
+                    <img src="./assets/icons/github.png" alt="ícone do github">
+                    GitHub
+                </a>
+                <a class="apresentacao-links-link" href="https://www.linkedin.com/in/arthur-morais-b24663250/" target="_blank">
+                    <img src="./assets/icons/linkedin.png" alt="">    
+                    LinkedIn
+                </a>
+                <a class="apresentacao-links-link" href="https://www.twitch.tv/tutusin10" target="_blank">
+                    <img src="./assets/icons/twitch.png" alt="">
+                    Twitch</a>
             </div>
         </section>
-        <img src="./imagem.png" alt="Foto do desenvolvedor">
+        <img src="./assets/images/Imagem.png" alt="Foto do desenvolvedor">
     </main>
 
-    <footer>
+    <footer class="rodape">
+        <p>Desenvolvido por Alura.</p>
     </footer>
 </body>
 </html>
