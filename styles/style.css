@@ -6,10 +6,10 @@
 
 /* gerais */
 :root {
-    --cor-primaria: #164B60;
+    --cor-primaria: #000000;
     --cor-secundaria: #F6F6F6;
-    --cor-terciaria: #4FC0D0;
-    --cor-hover: #1B6B93;
+    --cor-terciaria: #00c8ff;
+    --cor-hover: #272727;
 
     --fonte-primaria: 'Krona One', sans-serif;
     --fonte-secundaria: 'Montserrat', sans-serif;;
@@ -53,6 +53,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 82px;
 }
 
 .apresentacao-conteudo {
@@ -115,6 +116,7 @@ body {
 
 .apresentacao-imagem {
     width: 50%;
+    border-radius: 2% 20% 2% 20%;
 }
 
 /* footer */
@@ -128,4 +130,26 @@ body {
     font-weight: 400;
 
     padding: 24px;
+}
+
+/* media queries */
+
+@media (max-width: 1200px) {
+
+    .cabecalho {
+        padding: 10%;        
+    }
+
+    .cabecalho-menu {
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao-conteudo {
+        width: auto;
+    }
 }
